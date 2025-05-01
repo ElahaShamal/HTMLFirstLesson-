@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Over Image Using z-index</title>
+</head>
+<style>
+   .container-text{
+    max-width:370px;
+    height: 430px;
+    z-index: -1;
+    
+
+   }
+   .banner-text{
+        bottom: 60px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        z-index:2;
+        position: relative;
+        
+      
+
+    }
+    
+</style>
+<body>
+    <div class="container-text">
+            <img src="Image text.jpeg">
+            <div class="banner-text"> Mountain Holiday</div>
+             
+    </div>
+        
+    
+   
+    
+</body>
+</html>

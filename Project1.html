@@ -3,35 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            background-color: #2C3236;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+        .form {
+            width: 400px;
+        }
+        .button {
+            background-color:#E94C86;
+            color: white;
+            width:110%;
+            height: 40px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .input-fields {
+            display: flex;
+            margin: 10px 0px;
+        }
+        .icon-container {
+            margin-right: 15px;
+            margin-top: 7px;
+        }
 
-<!--link rel="stylesheet" href="styles.css"-->
+        .footer {
+            margin: 10px 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .signup {
+            color: white;
+        }
+
+        .notMember {
+            color: #565B61;
+        }
+
+        .input {
+             padding: 10px;
+             background-color: #394149;
+             border: none;
+             width: 94%;
+             color: white;
+            
+        }
+
+        .icon-styling {
+            color: #60656A;
+        }
+
+        .input-container {
+            flex-grow: 2; 
+            padding-top:10px;  
+        }
+        .icon{
+            padding-top: 10px;
+        }
+
+    </style>
 </head>
-<style>
-    .red-info {
-    color: red;
-    font-size:25px;
-    font-weight:bold;
-    text-align:center;
-
-    }
-    .blue-info {
-        color: blue;
-        font size:50px;
-        font-weight:bold;
-         text-align:center;
-    }
-    .green-info {
-        color: green;
-        font size:12px;
-        font-weight:bold;
-        text-align:center;
-    }
-</style>
 <body>
-
-    <h1 class="red-info"> This is a test 2</h1>
-    <h1 class="blue-info"> This is a test 3</h1>
-    <h1 class="green-info"> This is a test 4</h1>
+    <div class="container">
+        <form action="">
+            <div class="input-fields">
+                <div>
+                    <div class=" icon"></div>
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+                <div 
+                class="input-container">
+                <input class="input" type="text" placeholder="Username"></div>
+            </div>
+            <div class="icon"> <div>
+                    <i class="fa-solid fa-lock icon"></i>
+                </div>
+                <div class="input-container">
+                <input class="input"type="text" placeholder="Password"/></div>
+            </div>
+            <button class="button">Sign In </button>
+            <div class="footer"> <span class="notMember">Not a Member?</span><span 
+                 class="signup">Sign Up Now </span> </div>
+        </form>
+    </div>
 </body>
 </html>
